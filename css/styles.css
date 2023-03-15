@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 180px;
+}
+body {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 225, 127);
+}
+.Panda-container {
+  position: relative;
+}
+.Panda-image {
+}
+.Cloud-one {
+  position: absolute;
+  top: -20%;
+  left: 37%;
+  width: 1.5rem;
+  height: 1.5rem;
+
+  animation: slideUp 3s ease infinite both;
+}
+.Cloud-two {
+  position: absolute;
+  top: 0%;
+  left: 8%;
+  width: 1.2rem;
+  height: 1.2rem;
+
+  animation: slideUp 3s ease infinite both;
+}
+.Cloud-three {
+  position: absolute;
+  top: -5%;
+  right: 8%;
+  width: 1.2rem;
+  height: 1.2rem;
+
+  animation: slideUp 3s ease infinite both;
+}
+.Panda-sleep {
+  width: 0.3rem;
+  height: 0.3rem;
+
+  position: absolute;
+  top: 60%;
+  left: 54%;
+
+  animation: slideUpSleep 4s ease infinite 1s both;
+}
+.Panda-sleeptwo {
+  width: 0.5rem;
+  height: 0.5rem;
+
+  position: absolute;
+  top: 52%;
+  left: 54%;
+
+  animation: slideUpSleep 4s ease infinite 2s both;
+}
+.Panda-tumbleweed {
+  width: 0.6rem;
+  height: 0.6rem;
+
+  position: absolute;
+  top: 59%;
+  left: 2%;
+
+  animation: tumbleweedAnimation 6s linear infinite;
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0.125rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slideUpSleep {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-0.05rem);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-0.05rem);
+  }
+}
+@keyframes tumbleweedAnimation {
+  0% {
+    transform: translateX(0) translateY(-10px) rotate(0);
+  }
+  25% {
+    transform: translateX(212.5%) translateY(-50px) rotate(90deg);
+  }
+  50% {
+    transform: translateX(425%) translateY(-10px) rotate(180deg);
+  }
+  75% {
+    transform: translateX(637.5%) translateY(-50px) rotate(270deg);
+  }
+  100% {
+    transform: translateX(820%) translateY(-10px) rotate(359deg);
+  }
+}
