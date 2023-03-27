@@ -74,6 +74,11 @@ body {
 
   animation: tumbleweedAnimation 6s linear infinite;
 }
+.Panda-text{
+  position: fixed;
+  top: 37%;
+  left: 33%;
+}
 @keyframes slideUp {
   0% {
     transform: translateY(0);
